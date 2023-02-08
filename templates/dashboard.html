@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="row">
+    {% for listouest in  list %}
+    <div class="col-md-4 col-sm-6 col-xs-12">
+
+        <div class="single-service-elements">
+
+            <div class="single-serv-element">
+                <img src="{{ listouest.image.url }}" alt=""  style="width: 400px ; height: 200px"/>
+               <h1>{{ listouest.username }}</h1>
+            <h1>{{ listouest.password }}</h1>
+                <h1>{{ listouest.email }}</h1>
+            </div>
+            {% endfor %}
+</body>
+</html>
